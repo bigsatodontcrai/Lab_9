@@ -1,0 +1,56 @@
+<html>
+
+<body>
+    <form action="customerBackend.php" method="post">
+        <p>Items: </p>
+        <div id="footwear">
+
+            <label>Fire Gang Shoes TM: $195.99?</label><br>
+            <input type="radio" value=195.99 name="Shoes">
+            <label>Yes</label>
+            <br>
+            <input type="radio" value=0 name="Shoes">
+            <label>No</label>
+            <br>
+        </div>
+        <div id="tops">
+            <label>Based Sweater: $179.99?</label><br>
+            <input type="radio" value=179.99 name="Shirt">
+            <label>Yes</label>
+            <br>
+            <input type="radio" value=0 name="Shirt">
+            <label>No</label>
+            <br>
+        </div>
+        <div id="bottoms">
+            <label>Lit Bottoms TM: $195.99?</label><br>
+            <input type="radio" value=395.99 name="Pants">
+            <label>Yes</label>
+            <br>
+            <input type="radio" value=0 name="Pants">
+            <label>No</label>
+            <br>
+        </div>
+        <p>Shipping: </p>
+        <div id="shipping">
+            <input type="radio" value=0 name="Shipping">
+            <label>Free 7 Day Shipping</label><br>
+            <input type="radio" value=50 name="Shipping">
+            <label>$50 Over Night Shipping</label><br>
+            <input type="radio" value=5 name="Shipping">
+            <label>$5 Three Day Shipping</label><br>
+        </div>
+        <div id="User/Pass">
+            <label>Username:</label>
+            <input type="text" name="username"><br>
+            <label>Password:</label>
+            <input type="text" name="password"><br>
+        </div>
+        <input type="submit">
+    </form>
+
+</body>
+
+<script src="formChecker.js"></script>
+
+</html>
