@@ -1,43 +1,45 @@
 <html>
+<link rel="stylesheet" href="styles.css">
+</link>
 
 <body>
-    <form action="customerBackend.php" method="post">
+    <form name="shoppinglist" action="customerBackend.php" method="post" onsubmit="return validateForm()">
         <p>Items: </p>
         <div id="footwear">
 
             <label>Fire Gang Shoes TM: $195.99?</label><br>
-            <input type="radio" value=195.99 name="Shoes">
+            <input type="radio" value=195.99 name="Shoes" id="shoeYes">
             <label>Yes</label>
             <br>
-            <input type="radio" value=0 name="Shoes">
+            <input type="radio" value=0 name="Shoes" id="shoeNo">
             <label>No</label>
             <br>
         </div>
         <div id="tops">
             <label>Based Sweater: $179.99?</label><br>
-            <input type="radio" value=179.99 name="Shirt">
+            <input type="radio" value=179.99 name="Shirt" id="shirtYes">
             <label>Yes</label>
             <br>
-            <input type="radio" value=0 name="Shirt">
+            <input type="radio" value=0 name="Shirt" id="shirtNo">
             <label>No</label>
             <br>
         </div>
         <div id="bottoms">
             <label>Lit Bottoms TM: $195.99?</label><br>
-            <input type="radio" value=395.99 name="Pants">
+            <input type="radio" value=395.99 name="Pants" id="pantsYes">
             <label>Yes</label>
             <br>
-            <input type="radio" value=0 name="Pants">
+            <input type="radio" value=0 name="Pants" id="pantsNo">
             <label>No</label>
             <br>
         </div>
         <p>Shipping: </p>
         <div id="shipping">
-            <input type="radio" value=0 name="Shipping">
+            <input type="radio" value=0 name="Shipping" id="seven">
             <label>Free 7 Day Shipping</label><br>
-            <input type="radio" value=50 name="Shipping">
+            <input type="radio" value=50 name="Shipping" id="overnight">
             <label>$50 Over Night Shipping</label><br>
-            <input type="radio" value=5 name="Shipping">
+            <input type="radio" value=5 name="Shipping" id="threeday">
             <label>$5 Three Day Shipping</label><br>
         </div>
         <div id="User/Pass">
