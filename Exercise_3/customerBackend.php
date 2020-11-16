@@ -8,9 +8,12 @@
 	$shoes = $_POST["Shoes"];
 	$shirt = $_POST["Shirt"];
 	$pants = $_POST["Pants"];
-	$shipping = $_POST["Shipping"];
+    $shipping = $_POST["Shipping"];
+    
+    
 
-	$totalPrice = $shoes + $shirt + $pants + $shipping;
+    $totalPrice = $shoes + $shirt + $pants + $shipping;
+    echo "<link rel=stylesheet href=styles.css></link>";
 	echo "<div id=receipt>";
 
 	echo "<p>Welcome!" . $user . "<br> with password: ". $pass." </p>";
